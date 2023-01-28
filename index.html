@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-1 text-box">
+          <p>Generate a</p>
+          <p class="color-title">random password</p>
+          <span>Never use an insecure password again.</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1 btn-box">
+          <button class="generate-passwords" onclick="generatePw()">Generate passwords</button>
+          <div class="lenght-box">
+            <input class="userInput" type="text" name="number" id="number" />
+            <button class="submit" onclick="pwLenght()">Send</button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1 lenght-text">
+          <span
+            >Choose a number between <br />
+            4 - 15 characters
+          </span>
+        </div>
+      </div>
+      <div class="row bar"></div>
+      <div class="row">
+        <div class="col-1 pw-box">
+          <div class="pw-box1">
+            <div class="password1 copy-content1" onclick="copy1()"></div>
+          </div>
+          <div class="pw-box2">
+            <div class="password2 copy-content2" onclick="copy1()"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
